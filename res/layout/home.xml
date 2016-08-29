@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/background">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The United States"
+            android:id="@+id/title" android:textColor="#000000" android:textSize="24dp"
+            android:layout_gravity="center" android:gravity="center" android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Constitution"
+            android:id="@+id/title2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="36dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="0dp"
+            android:layout_marginTop="0dp"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_marginTop="-25dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:id="@+id/contents"
+                android:gravity="center_horizontal">
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article I"
+                    android:id="@+id/a1" android:textSize="24dp"
+                    android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article II"
+                    android:id="@+id/a2" android:textSize="24dp" android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article III"
+                    android:id="@+id/a3" android:textSize="24dp" android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article IV"
+                    android:id="@+id/a4" android:textSize="24dp" android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article V"
+                    android:id="@+id/a5"
+                    android:textSize="24dp" android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article VI"
+                    android:id="@+id/a6"
+                    android:textSize="24dp" android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Article VII"
+                    android:id="@+id/a7"
+                    android:textSize="24dp" android:onClick="onClick"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amendments"
+                    android:id="@+id/a8" android:textSize="24dp" android:onClick="onClick"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
