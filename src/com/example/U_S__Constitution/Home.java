@@ -106,6 +106,7 @@ public class Home extends Activity {
         double[] info = {width, height};
         intent.putExtra("info", info);
         intent.putExtra("IDs", front.get(article - 1));
+        intent.putExtra("isAmendmentSection", article == 8);
         startActivity(intent);
     }
 

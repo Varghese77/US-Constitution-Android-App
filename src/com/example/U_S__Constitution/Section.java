@@ -29,10 +29,15 @@ public class Section extends Activity {
         Node ids = (Node) intent.getSerializableExtra("IDs");
         int numSections = ids.length();
         int width = (int) dim[0];
+        boolean isArticleSection = intent.getExtras().getBoolean("isAmendmentSection", false);
         LinearLayout sections = (LinearLayout) findViewById(R.id.sections);
         for (int i = 0; i < numSections; i++){
             Button b  = new Button(this);
-            b.setText("Section " + convertToRoman(i + 1));
+            if (isArticleSection) {
+                b.setText("Amendment " + convertToRoman(i + 1));
+            } else {
+                b.setText("Section " + convertToRoman(i + 1));
+            }
             b.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 24);
             b.setWidth((int)(0.66 * width));
             sections.addView(b);
